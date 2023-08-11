@@ -1,31 +1,10 @@
 Options -Indexes
 RewriteEngine On
 
-# # Rewrite other URLs
-# Header set Access-Control-Allow-Origin "https://localhost/mychatapp1/public/"
+# Rewrite other URLs
+Header set Access-Control-Allow-Origin "https://localhost/mychatapp1/public/"
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([^\.]+)$ public/index.php [L]
 
-RewriteRule "^chat/(.*).php$" "chat.php?name=$1" [L]
-
-RewriteRule ^user(/.*)?$ user/index.php [L]
-RewriteRule ^api(/.*)?$ 404.php [L]
-
-RewriteRule ^log(/.*)?$ 404.php [L]
-RewriteRule ^src(/.*)?$ 404.php [L]
-RewriteRule ^Template(/.*)?$ 404.php [L]
-RewriteRule ^verification(/.*)?$ 404.php [L]
-
-# RewriteRule ^composer.json(/.*)?$ 404.php [L]
-# RewriteRule ^composer.lock(/.*)?$ 404.php [L]
-
-
-RewriteRule ^var(/.*)?$ var/index.php [L]
-
-# Redirect URLs ending with .php to 404 page
-RewriteCond %{ENV:REDIRECT_STATUS} ^$
-RewriteRule ^(.+)\.php$ /public/404 [R=404,L]
-
-ErrorDocument 404 /public/404.php
