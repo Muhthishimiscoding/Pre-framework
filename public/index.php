@@ -5,11 +5,6 @@ use Worth\controllers\AuthController;
 use MuhthishimisCoding\PreFramework\Application;
 use Worth\controllers\SiteController;
 
-// use Worth\models\LoginForm;
-
-$_SERVER['REQUEST_URI'] = str_replace('pre-framework/', '', $_SERVER['REQUEST_URI']);
-// REQUEST_URI returns complete url including /users?id=1
-// PATH_INFO just returns /users
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
 $config = [
@@ -19,6 +14,7 @@ $config = [
         'password' => $_ENV['DB_PASSWORD'],
         'db' => $_ENV['DB_NAME']
     ],
+    'timezone'=>$_ENV['TIMEZONE'],
     'error_reporting' => $_ENV['DEVELOPMENT_MODE'],
     'loginClass' => \Worth\models\LoginForm::class,
     'logFile' => '/log/error_log.txt'

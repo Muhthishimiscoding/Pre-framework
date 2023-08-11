@@ -11,10 +11,6 @@ class AuthController extends Controller
 {
     public RegisterModel $model;
     public LoginForm $login;
-    // public function __construct()
-    // {
-
-    // }
     public function register(Request $request)
     {
         $modelRegister = new RegisterModel();
