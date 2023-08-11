@@ -1,0 +1,372 @@
+[09-Aug-2023 00:10:31 Asia/Karachi] PHP Warning:  Undefined array key "css" in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 43
+[09-Aug-2023 00:10:31 Asia/Karachi] PHP Warning:  Undefined array key "scripts" in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 49
+[09-Aug-2023 00:10:46 Asia/Karachi] PHP Warning:  Undefined array key "css" in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 43
+[09-Aug-2023 00:10:46 Asia/Karachi] PHP Warning:  Undefined array key "css" in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 43
+[09-Aug-2023 00:10:46 Asia/Karachi] PHP Warning:  Undefined array key "scripts" in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 49
+[09-Aug-2023 01:05:03 Asia/Karachi] PHP Warning:  Undefined array key "css" in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 43
+[09-Aug-2023 01:05:04 Asia/Karachi] PHP Warning:  Undefined array key "scripts" in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 49
+[09-Aug-2023 01:05:17 Asia/Karachi] PHP Warning:  Undefined array key "css" in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 43
+[09-Aug-2023 01:05:17 Asia/Karachi] PHP Warning:  Undefined array key "scripts" in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 49
+[09-Aug-2023 01:12:15 Asia/Karachi] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause' in C:\xampp1\htdocs\Pre-Framework\core\Database.php:260
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Database.php(260): PDOStatement->execute(Array)
+#1 C:\xampp1\htdocs\Pre-Framework\core\Database.php(231): MuhthishimisCoding\PreFramework\Database->handleStmtbind('SELECT *  FROM ...', Array, 1, 0)
+#2 C:\xampp1\htdocs\Pre-Framework\core\Model.php(117): MuhthishimisCoding\PreFramework\Database->select('users', Array)
+#3 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(26): MuhthishimisCoding\PreFramework\Model->validate()
+#4 [internal function]: Worth\controllers\AuthController->register(Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#6 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#7 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#8 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Database.php on line 260
+[09-Aug-2023 01:14:07 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on null in C:\xampp1\htdocs\Pre-Framework\core\Model.php:120
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(26): MuhthishimisCoding\PreFramework\Model->validate()
+#1 [internal function]: Worth\controllers\AuthController->register(Object(MuhthishimisCoding\PreFramework\Request))
+#2 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#3 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#4 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#5 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Model.php on line 120
+[09-Aug-2023 01:15:17 Asia/Karachi] {"code":"42S22","line":261,"file":"C:\\xampp1\\htdocs\\Pre-Framework\\core\\Database.php","message":"SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'","timestamp":"2023-08-09 01:15:17 am"}
+[09-Aug-2023 01:15:24 Asia/Karachi] {"code":"42S22","line":261,"file":"C:\\xampp1\\htdocs\\Pre-Framework\\core\\Database.php","message":"SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'","timestamp":"2023-08-09 01:15:24 am"}
+[09-Aug-2023 01:21:24 Asia/Karachi] PHP Fatal error:  Uncaught Error: Typed property MuhthishimisCoding\PreFramework\Database::$pdo must not be accessed before initialization in C:\xampp1\htdocs\Pre-Framework\core\Database.php:247
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Database.php(230): MuhthishimisCoding\PreFramework\Database->handleStmtbind('SELECT *  FROM ...', Array, 1, 0)
+#1 C:\xampp1\htdocs\Pre-Framework\core\Model.php(117): MuhthishimisCoding\PreFramework\Database->select('users', Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(26): MuhthishimisCoding\PreFramework\Model->validate()
+#3 [internal function]: Worth\controllers\AuthController->register(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Database.php on line 247
+[09-Aug-2023 01:21:45 Asia/Karachi] {"message":"SQLSTATE[HY000] [1049] Unknown database 'mvc_frassmework'","line":19,"file":"C:\\xampp1\\htdocs\\Pre-Framework\\core\\Database.php","code":1049,"timestamp":"2023-08-09 01:21:45 am"}
+[09-Aug-2023 01:21:54 Asia/Karachi] PHP Fatal error:  Uncaught Error: Typed property MuhthishimisCoding\PreFramework\Database::$pdo must not be accessed before initialization in C:\xampp1\htdocs\Pre-Framework\core\Database.php:247
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Database.php(230): MuhthishimisCoding\PreFramework\Database->handleStmtbind('SELECT *  FROM ...', Array, 1, 0)
+#1 C:\xampp1\htdocs\Pre-Framework\core\Model.php(117): MuhthishimisCoding\PreFramework\Database->select('users', Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(26): MuhthishimisCoding\PreFramework\Model->validate()
+#3 [internal function]: Worth\controllers\AuthController->register(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Database.php on line 247
+[09-Aug-2023 01:25:10 Asia/Karachi] PHP Fatal error:  Uncaught Error: Typed property MuhthishimisCoding\PreFramework\Database::$pdo must not be accessed before initialization in C:\xampp1\htdocs\Pre-Framework\core\Database.php:248
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Database.php(230): MuhthishimisCoding\PreFramework\Database->handleStmtbind('SELECT *  FROM ...', Array, 1, 0)
+#1 C:\xampp1\htdocs\Pre-Framework\core\Model.php(117): MuhthishimisCoding\PreFramework\Database->select('users', Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(26): MuhthishimisCoding\PreFramework\Model->validate()
+#3 [internal function]: Worth\controllers\AuthController->register(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Database.php on line 248
+[09-Aug-2023 01:25:58 Asia/Karachi] PHP Fatal error:  Uncaught Error: Typed property MuhthishimisCoding\PreFramework\Database::$pdo must not be accessed before initialization in C:\xampp1\htdocs\Pre-Framework\core\Database.php:248
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Database.php(230): MuhthishimisCoding\PreFramework\Database->handleStmtbind('SELECT *  FROM ...', Array, 1, 0)
+#1 C:\xampp1\htdocs\Pre-Framework\core\Model.php(117): MuhthishimisCoding\PreFramework\Database->select('users', Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(26): MuhthishimisCoding\PreFramework\Model->validate()
+#3 [internal function]: Worth\controllers\AuthController->register(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Database.php on line 248
+[09-Aug-2023 01:25:59 Asia/Karachi] PHP Fatal error:  Uncaught Error: Typed property MuhthishimisCoding\PreFramework\Database::$pdo must not be accessed before initialization in C:\xampp1\htdocs\Pre-Framework\core\Database.php:248
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Database.php(230): MuhthishimisCoding\PreFramework\Database->handleStmtbind('SELECT *  FROM ...', Array, 1, 0)
+#1 C:\xampp1\htdocs\Pre-Framework\core\Model.php(117): MuhthishimisCoding\PreFramework\Database->select('users', Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(26): MuhthishimisCoding\PreFramework\Model->validate()
+#3 [internal function]: Worth\controllers\AuthController->register(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Database.php on line 248
+[09-Aug-2023 01:29:10 Asia/Karachi] {"message":"SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'","line":261,"file":"C:\\xampp1\\htdocs\\Pre-Framework\\core\\Database.php","code":"42S22","timestamp":"2023-08-09 01:29:10 am"}
+[09-Aug-2023 01:29:24 Asia/Karachi] {"message":"SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'","line":261,"file":"C:\\xampp1\\htdocs\\Pre-Framework\\core\\Database.php","code":"42S22","timestamp":"2023-08-09 01:29:24 am"}
+[09-Aug-2023 01:29:31 Asia/Karachi] {"message":"SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'","line":261,"file":"C:\\xampp1\\htdocs\\Pre-Framework\\core\\Database.php","code":"42S22","timestamp":"2023-08-09 01:29:31 am"}
+[09-Aug-2023 01:59:18 Asia/Karachi] PHP Fatal error:  Uncaught TypeError: MuhthishimisCoding\PreFramework\Model::label(): Return value must be of type array, string returned in C:\xampp1\htdocs\Pre-Framework\core\Model.php:124
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Model.php(114): MuhthishimisCoding\PreFramework\Model->label('username')
+#1 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(26): MuhthishimisCoding\PreFramework\Model->validate()
+#2 [internal function]: Worth\controllers\AuthController->register(Object(MuhthishimisCoding\PreFramework\Request))
+#3 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#5 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#6 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Model.php on line 124
+[09-Aug-2023 02:25:58 Asia/Karachi] PHP Fatal error:  Uncaught TypeError: MuhthishimisCoding\PreFramework\form\Form::begin(): Argument #1 ($model) must be of type MuhthishimisCoding\PreFramework\Model, null given, called in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 7 and defined in C:\xampp1\htdocs\Pre-Framework\core\form\Form.php:10
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\views\login.php(7): MuhthishimisCoding\PreFramework\form\Form::begin(NULL)
+#1 C:\xampp1\htdocs\Pre-Framework\core\Router.php(48): include_once('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#3 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(17): MuhthishimisCoding\PreFramework\Controller->render('login')
+#4 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#6 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#7 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#8 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\form\Form.php on line 10
+[09-Aug-2023 02:34:33 Asia/Karachi] PHP Fatal error:  Uncaught Error: Class "Session" not found in C:\xampp1\htdocs\Pre-Framework\views\login.php:9
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(48): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(23): MuhthishimisCoding\PreFramework\Controller->render('login', Array)
+#3 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(32): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 9
+[09-Aug-2023 20:45:33 Asia/Karachi] PHP Fatal error:  Uncaught Error: Class "Session" not found in C:\xampp1\htdocs\Pre-Framework\views\login.php:9
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(49): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(33): MuhthishimisCoding\PreFramework\Controller->render('login', Array)
+#3 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(33): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 9
+[09-Aug-2023 20:47:07 Asia/Karachi] PHP Fatal error:  Uncaught Error: Class "Session" not found in C:\xampp1\htdocs\Pre-Framework\views\login.php:9
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(47): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(33): MuhthishimisCoding\PreFramework\Controller->render('login', Array)
+#3 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 9
+[09-Aug-2023 20:47:08 Asia/Karachi] PHP Fatal error:  Uncaught Error: Class "Session" not found in C:\xampp1\htdocs\Pre-Framework\views\login.php:9
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(47): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(33): MuhthishimisCoding\PreFramework\Controller->render('login', Array)
+#3 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 9
+[09-Aug-2023 20:47:13 Asia/Karachi] PHP Fatal error:  Uncaught Error: Class "Session" not found in C:\xampp1\htdocs\Pre-Framework\views\login.php:9
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(47): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(33): MuhthishimisCoding\PreFramework\Controller->render('login', Array)
+#3 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 9
+[09-Aug-2023 20:47:15 Asia/Karachi] PHP Fatal error:  Uncaught Error: Class "Session" not found in C:\xampp1\htdocs\Pre-Framework\views\login.php:9
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(47): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(33): MuhthishimisCoding\PreFramework\Controller->render('login', Array)
+#3 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 9
+[09-Aug-2023 20:47:52 Asia/Karachi] PHP Fatal error:  Uncaught Error: Class "Session" not found in C:\xampp1\htdocs\Pre-Framework\views\login.php:9
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(47): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(33): MuhthishimisCoding\PreFramework\Controller->render('login', Array)
+#3 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 9
+[09-Aug-2023 20:50:16 Asia/Karachi] PHP Fatal error:  Uncaught Error: Class "Session" not found in C:\xampp1\htdocs\Pre-Framework\views\login.php:9
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(50): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(33): MuhthishimisCoding\PreFramework\Controller->render('login', Array)
+#3 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 9
+[09-Aug-2023 20:55:18 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to a member function showFlashes() on null in C:\xampp1\htdocs\Pre-Framework\views\login.php:8
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(50): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(8): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(33): MuhthishimisCoding\PreFramework\Controller->render('login', Array)
+#3 [internal function]: Worth\controllers\AuthController->login(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(38): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 8
+[10-Aug-2023 01:14:22 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to a member function isLogedin() on string in C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php:3
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(48): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): MuhthishimisCoding\PreFramework\Router->renderView(Array)
+#2 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#3 C:\xampp1\htdocs\Pre-Framework\public\index.php(39): MuhthishimisCoding\PreFramework\Application->run()
+#4 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php on line 3
+[10-Aug-2023 01:14:37 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to a member function isLogedin() on string in C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php:3
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(48): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): MuhthishimisCoding\PreFramework\Router->renderView(Array)
+#2 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#3 C:\xampp1\htdocs\Pre-Framework\public\index.php(39): MuhthishimisCoding\PreFramework\Application->run()
+#4 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php on line 3
+[10-Aug-2023 01:15:04 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function Worth\models\LoginForm() in C:\xampp1\htdocs\Pre-Framework\core\Application.php:23
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\public\index.php(23): MuhthishimisCoding\PreFramework\Application->__construct('C:\\xampp1\\htdoc...', Array)
+#1 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Application.php on line 23
+[10-Aug-2023 01:15:34 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function Worth\models\LoginForm() in C:\xampp1\htdocs\Pre-Framework\core\Application.php:23
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\public\index.php(23): MuhthishimisCoding\PreFramework\Application->__construct('C:\\xampp1\\htdoc...', Array)
+#1 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Application.php on line 23
+[10-Aug-2023 01:18:00 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to a member function isLogedin() on string in C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php:3
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(48): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): MuhthishimisCoding\PreFramework\Router->renderView(Array)
+#2 C:\xampp1\htdocs\Pre-Framework\core\Application.php(34): MuhthishimisCoding\PreFramework\Router->resolve()
+#3 C:\xampp1\htdocs\Pre-Framework\public\index.php(40): MuhthishimisCoding\PreFramework\Application->run()
+#4 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php on line 3
+[10-Aug-2023 01:20:38 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined function Worth\models\LoginForm() in C:\xampp1\htdocs\Pre-Framework\core\Application.php:23
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\public\index.php(24): MuhthishimisCoding\PreFramework\Application->__construct('C:\\xampp1\\htdoc...', Array)
+#1 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Application.php on line 23
+[10-Aug-2023 01:22:01 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to a member function isLogedin() on string in C:\xampp1\htdocs\Pre-Framework\core\Application.php:24
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\public\index.php(24): MuhthishimisCoding\PreFramework\Application->__construct('C:\\xampp1\\htdoc...', Array)
+#1 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Application.php on line 24
+[10-Aug-2023 01:23:33 Asia/Karachi] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property MuhthishimisCoding\PreFramework\Application::$loginClass of type Worth\models\LoginForm in C:\xampp1\htdocs\Pre-Framework\core\Application.php:25
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\public\index.php(24): MuhthishimisCoding\PreFramework\Application->__construct('C:\\xampp1\\htdoc...', Array)
+#1 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Application.php on line 25
+[10-Aug-2023 01:23:42 Asia/Karachi] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property MuhthishimisCoding\PreFramework\Application::$loginClass of type Worth\models\LoginForm in C:\xampp1\htdocs\Pre-Framework\core\Application.php:25
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\public\index.php(24): MuhthishimisCoding\PreFramework\Application->__construct('C:\\xampp1\\htdoc...', Array)
+#1 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Application.php on line 25
+[10-Aug-2023 03:08:43 Asia/Karachi] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\xampp1\htdocs\Pre-Framework\vendor\composer\ClassLoader.php on line 435
+[10-Aug-2023 21:02:48 Asia/Karachi] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp1\htdocs\Pre-Framework\core\Router.php:31
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Application.php(36): MuhthishimisCoding\PreFramework\Router->resolve()
+#1 C:\xampp1\htdocs\Pre-Framework\public\index.php(43): MuhthishimisCoding\PreFramework\Application->run()
+#2 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 31
+[10-Aug-2023 21:05:40 Asia/Karachi] PHP Fatal error:  Uncaught TypeError: MuhthishimisCoding\PreFramework\form\Form::begin(): Argument #1 ($model) must be of type MuhthishimisCoding\PreFramework\Model, null given, called in C:\xampp1\htdocs\Pre-Framework\views\login.php on line 11 and defined in C:\xampp1\htdocs\Pre-Framework\core\form\Form.php:10
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\views\login.php(11): MuhthishimisCoding\PreFramework\form\Form::begin(NULL)
+#1 C:\xampp1\htdocs\Pre-Framework\core\Router.php(56): include_once('C:\\xampp1\\htdoc...')
+#2 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(16): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#3 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(81): MuhthishimisCoding\PreFramework\Controller->render('login')
+#4 [internal function]: Worth\controllers\AuthController->profile(Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#6 C:\xampp1\htdocs\Pre-Framework\core\Application.php(36): MuhthishimisCoding\PreFramework\Router->resolve()
+#7 C:\xampp1\htdocs\Pre-Framework\public\index.php(43): MuhthishimisCoding\PreFramework\Application->run()
+#8 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\form\Form.php on line 10
+[10-Aug-2023 21:19:52 Asia/Karachi] PHP Fatal error:  Uncaught Error: Object of class MuhthishimisCoding\PreFramework\Router could not be converted to string in C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php:5
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Router.php(54): include_once()
+#1 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(16): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#2 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(78): MuhthishimisCoding\PreFramework\Controller->render('profile')
+#3 [internal function]: Worth\controllers\AuthController->profile(Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#5 C:\xampp1\htdocs\Pre-Framework\core\Application.php(36): MuhthishimisCoding\PreFramework\Router->resolve()
+#6 C:\xampp1\htdocs\Pre-Framework\public\index.php(43): MuhthishimisCoding\PreFramework\Application->run()
+#7 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php on line 5
+[10-Aug-2023 21:50:46 Asia/Karachi] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp1\htdocs\Pre-Framework\core\Router.php:33
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Application.php(36): MuhthishimisCoding\PreFramework\Router->resolve()
+#1 C:\xampp1\htdocs\Pre-Framework\public\index.php(41): MuhthishimisCoding\PreFramework\Application->run()
+#2 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 33
+[11-Aug-2023 00:26:25 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined method MuhthishimisCoding\PreFramework\View::profile() in C:\xampp1\htdocs\Pre-Framework\core\Router.php:38
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(16): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#1 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(78): MuhthishimisCoding\PreFramework\Controller->render('profile')
+#2 [internal function]: Worth\controllers\AuthController->profile(Object(MuhthishimisCoding\PreFramework\Request))
+#3 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Application.php(38): MuhthishimisCoding\PreFramework\Router->resolve()
+#5 C:\xampp1\htdocs\Pre-Framework\public\index.php(42): MuhthishimisCoding\PreFramework\Application->run()
+#6 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 38
+[11-Aug-2023 00:26:40 Asia/Karachi] PHP Fatal error:  Uncaught Error: Call to undefined method MuhthishimisCoding\PreFramework\View::profile() in C:\xampp1\htdocs\Pre-Framework\core\Router.php:38
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(16): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#1 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(78): MuhthishimisCoding\PreFramework\Controller->render('profile')
+#2 [internal function]: Worth\controllers\AuthController->profile(Object(MuhthishimisCoding\PreFramework\Request))
+#3 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Application.php(38): MuhthishimisCoding\PreFramework\Router->resolve()
+#5 C:\xampp1\htdocs\Pre-Framework\public\index.php(42): MuhthishimisCoding\PreFramework\Application->run()
+#6 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Router.php on line 38
+[11-Aug-2023 01:13:42 Asia/Karachi] PHP Fatal error:  Uncaught Error: Typed property MuhthishimisCoding\PreFramework\Database::$pdo must not be accessed before initialization in C:\xampp1\htdocs\Pre-Framework\core\Database.php:248
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Database.php(230): MuhthishimisCoding\PreFramework\Database->handleStmtbind('SELECT *  FROM ...', Array, 1, 0)
+#1 C:\xampp1\htdocs\Pre-Framework\models\LoginForm.php(46): MuhthishimisCoding\PreFramework\Database->select('users', Array)
+#2 C:\xampp1\htdocs\Pre-Framework\core\Application.php(45): Worth\models\LoginForm->retriveUser()
+#3 C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php(3): MuhthishimisCoding\PreFramework\Application::user()
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(58): include_once('C:\\xampp1\\htdoc...')
+#5 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(16): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#6 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(78): MuhthishimisCoding\PreFramework\Controller->render('profile')
+#7 [internal function]: Worth\controllers\AuthController->profile(Object(MuhthishimisCoding\PreFramework\Request))
+#8 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#9 C:\xampp1\htdocs\Pre-Framework\core\Application.php(38): MuhthishimisCoding\PreFramework\Router->resolve()
+#10 C:\xampp1\htdocs\Pre-Framework\public\index.php(42): MuhthishimisCoding\PreFramework\Application->run()
+#11 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Database.php on line 248
+[11-Aug-2023 01:14:02 Asia/Karachi] PHP Fatal error:  Uncaught Error: Typed property MuhthishimisCoding\PreFramework\Database::$pdo must not be accessed before initialization in C:\xampp1\htdocs\Pre-Framework\core\Database.php:248
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Database.php(230): MuhthishimisCoding\PreFramework\Database->handleStmtbind('SELECT *  FROM ...', Array, 1, 0)
+#1 C:\xampp1\htdocs\Pre-Framework\models\LoginForm.php(46): MuhthishimisCoding\PreFramework\Database->select('users', Array)
+#2 C:\xampp1\htdocs\Pre-Framework\core\Application.php(45): Worth\models\LoginForm->retriveUser()
+#3 C:\xampp1\htdocs\Pre-Framework\views\layouts\header.php(3): MuhthishimisCoding\PreFramework\Application::user()
+#4 C:\xampp1\htdocs\Pre-Framework\core\Router.php(58): include_once('C:\\xampp1\\htdoc...')
+#5 C:\xampp1\htdocs\Pre-Framework\core\Controller.php(16): MuhthishimisCoding\PreFramework\Router->renderView(Array, Array)
+#6 C:\xampp1\htdocs\Pre-Framework\controllers\AuthController.php(78): MuhthishimisCoding\PreFramework\Controller->render('profile')
+#7 [internal function]: Worth\controllers\AuthController->profile(Object(MuhthishimisCoding\PreFramework\Request))
+#8 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#9 C:\xampp1\htdocs\Pre-Framework\core\Application.php(38): MuhthishimisCoding\PreFramework\Router->resolve()
+#10 C:\xampp1\htdocs\Pre-Framework\public\index.php(42): MuhthishimisCoding\PreFramework\Application->run()
+#11 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Database.php on line 248
+[11-Aug-2023 02:44:10 Asia/Karachi] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MuhthishimisCoding\PreFramework\Request::giveBody(), 4 passed in C:\xampp1\htdocs\Pre-Framework\core\Request.php on line 35 and exactly 7 expected in C:\xampp1\htdocs\Pre-Framework\core\Request.php:18
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Request.php(35): MuhthishimisCoding\PreFramework\Request->giveBody(Array, Array, 0, 515)
+#1 C:\xampp1\htdocs\Pre-Framework\controllers\SiteController.php(16): MuhthishimisCoding\PreFramework\Request->getBody()
+#2 [internal function]: Worth\controllers\SiteController->contact(Object(MuhthishimisCoding\PreFramework\Request))
+#3 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Application.php(38): MuhthishimisCoding\PreFramework\Router->resolve()
+#5 C:\xampp1\htdocs\Pre-Framework\public\index.php(42): MuhthishimisCoding\PreFramework\Application->run()
+#6 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Request.php on line 18
+[11-Aug-2023 03:09:39 Asia/Karachi] PHP Fatal error:  Uncaught Error: Class "MuhthishimisCoding\PreFramework\CleanFormData" not found in C:\xampp1\htdocs\Pre-Framework\core\Request.php:27
+Stack trace:
+#0 C:\xampp1\htdocs\Pre-Framework\core\Request.php(45): MuhthishimisCoding\PreFramework\Request->giveBody(Array, 0, 515, 1, NULL, NULL)
+#1 C:\xampp1\htdocs\Pre-Framework\controllers\SiteController.php(16): MuhthishimisCoding\PreFramework\Request->getBody(1)
+#2 [internal function]: Worth\controllers\SiteController->contact(Object(MuhthishimisCoding\PreFramework\Request))
+#3 C:\xampp1\htdocs\Pre-Framework\core\Router.php(31): call_user_func(Array, Object(MuhthishimisCoding\PreFramework\Request))
+#4 C:\xampp1\htdocs\Pre-Framework\core\Application.php(38): MuhthishimisCoding\PreFramework\Router->resolve()
+#5 C:\xampp1\htdocs\Pre-Framework\public\index.php(42): MuhthishimisCoding\PreFramework\Application->run()
+#6 {main}
+  thrown in C:\xampp1\htdocs\Pre-Framework\core\Request.php on line 27

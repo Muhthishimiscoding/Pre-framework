@@ -1,0 +1,5 @@
+.idea
+time.txt
+.env
+vendor
+!.gitignore
